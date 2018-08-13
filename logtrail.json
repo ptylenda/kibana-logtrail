@@ -1,0 +1,36 @@
+{
+    "index_patterns": [
+        {
+            "color_mapping": {
+                "field": "level",
+                "mapping": {
+                    "DEBUG": "#B5E7A0",
+                    "ERROR": "#FF0000",
+                    "FATAL": "#FF00FF",
+                    "INFO": "#CFE0E8",
+                    "WARN": "#FFEF96"
+                }
+            },
+            "default_time_range_in_days": 0,
+            "display_timestamp_format": "MMM DD HH:mm:ss",
+            "display_timezone": "local",
+            "es": {
+                "allow_url_parameter": false,
+                "default_index": "log-*"
+            },
+            "es_index_time_offset_in_seconds": 0,
+            "fields": {
+                "mapping": {
+                    "display_timestamp": "timeStamp",
+                    "hostname": "hostName",
+                    "message": "message",
+                    "program": "domain",
+                    "timestamp": "timeStamp"
+                }
+            },
+            "max_buckets": 500,
+            "nested_objects": true,
+            "tail_interval_in_seconds": 1
+        }
+    ]
+}
